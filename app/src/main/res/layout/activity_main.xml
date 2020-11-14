@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:windowSoftInputMode="adjustPan">
+
+
+        <EditText
+        android:id="@+id/simpleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#FFFFFF"
+        android:gravity="top"
+        android:hint="input for text grammar correction"
+            android:maxLength="200"
+        android:padding="15dp"
+        android:textColorHint="#D3D3D3"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/displayText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="270dp"
+        android:background="@drawable/rounded_button"
+        android:padding="13dp"
+
+        android:text="check grammar"
+        android:textColor="@color/design_default_color_background"
+        android:textStyle="bold" />
+
+
+    <!--  <TextView
+         android:id="@+id/textView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="300dp"
+         android:layout_marginBottom="100dp"
+         android:layout_alignParentBottom="true"
+         android:padding="15dp" />
+     android:text="TextView" />
+
+    <TextView
+         android:id="@+id/error_word"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Title"
+         android:textSize="18sp"/>
+
+
+     <TextView
+         android:id="@+id/original_word"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Rating"/>
+
+     <TextView
+         android:id="@+id/explaination"
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Year"/>
+ -->
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/remedyResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="230dp"
+            android:background="#e2e4fe"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/card_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="10dp"
+                android:listSelector="@android:color/transparent" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
+
